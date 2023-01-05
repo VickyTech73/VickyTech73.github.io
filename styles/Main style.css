@@ -1,0 +1,116 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background: #303030;
+    display: inline-block;
+}
+
+.c1{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    animation: goRound 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes goRound {
+    0%{}
+    25%{}
+    50%{width: 50px; height: 50px; left: 675px; top: 320px;}
+    75%{width: 200px; height: 200px; left: 1000px; }
+    100%{left: 200px; top: 250px;}
+}
+
+.c2{
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
+    position: absolute;
+    left: 675px;
+    top: 320px;
+    animation: goRound2 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes goRound2 {
+    0%{}
+    25%{}
+    50%{width: 200px; height: 200px; left: 1000px; }
+    75%{width:200px; height:200px; left: 200px; top: 250px;}
+    100%{width: 50px; height: 50px; left: 675px; top: 320px;}
+    
+    
+}
+
+.c3{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 1000px;
+    top: 250px;
+    animation: goRound3 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes goRound3 {
+    0%{}
+    25%{}
+    50%{width:200px; height:200px; left: 200px; top: 250px;}
+    75%{width: 50px; height: 50px; left: 675px; top: 320px;}
+    100%{width: 200px; height: 200px; left: 1000px; }
+}
+
+.P1{
+    color: aqua;
+    font-size: 50px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    position:relative;
+}
+
+.P2{
+    color: aqua;
+    font-size: 50px;
+    animation: appear 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    position:relative;
+}
+
+.P3{
+    color: aqua;
+    font-size: 50px;
+    animation: appear 1s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    position:relative;
+}
+
+.P4{
+    color: aqua;
+    font-size: 50px;
+    animation: appear 1s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    position:relative;
+}
+
+@keyframes appear {
+    0%{}
+    25%{}
+    100%{opacity: 1;}
+}
